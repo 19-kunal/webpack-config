@@ -1,0 +1,12 @@
+@use "global";
+
+.container {
+    display: flex;
+    padding: 1rem;
+    background: linear-gradient(to top, black ,white);
+
+    h1 {
+        font-size: 68px;
+        text-align: center;
+    }
+}

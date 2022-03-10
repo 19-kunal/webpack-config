@@ -1,3 +1,6 @@
+import "./styles/index.scss"
+import "./styles/woof.css"
+
 const elvenShieldRecipe = {
     leatherStrips: 2,
     ironIngot: 1,
