@@ -5,7 +5,7 @@ let target = process.env.NODE_ENV === "production" ? "browserslist": "web"
 
 module.exports = {
     mode: mode,
-    plugins: [ new MiniCssExtractPlugin() ],
+
     module: {
         rules: [
             {
@@ -20,7 +20,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.js?$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use : [
                     { loader: "babel-loader" }
@@ -29,8 +29,16 @@ module.exports = {
         ]
     },
 
+    plugins: [ new MiniCssExtractPlugin() ],
+
+    resolve: {
+        extensions: [ ".js", ".jsx" ],
+    },
+
     target: target,
+    
     devtool: "source-map",
+    
     devServer: {
         static: "./dist",
         hot: true   

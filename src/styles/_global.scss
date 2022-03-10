@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0.3rem;
     box-sizing: border-box;
     background-color: variables.$bg;
     color: var(--text);
@@ -16,4 +16,5 @@ main {
 
 button {
     font-size: 1.5rem;
+    background-color: #fff;
 }
